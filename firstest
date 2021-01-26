@@ -1,0 +1,7 @@
+resources:
+- name: backend-repo
+  type: git
+  source:
+    uri: https://github.com/Kehrlann/concourse-demo.git
+    branch: master
+    
