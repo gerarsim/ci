@@ -1,0 +1,16 @@
+jobs:
+- name: ping
+  plan:
+  - task: ping
+    config:
+      platform: linux
+      image_resource:
+        type: docker-image
+        source:
+          respository: alpine
+      run:
+        path: /bin/ping
+        args:
+        - google.com
+        - -c
+        - '2'
